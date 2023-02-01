@@ -1,0 +1,80 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+#header {
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+#header h1 {
+    font-weight: 700;
+}
+
+#gallery {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.row {
+    margin-top: 1em;
+    text-align: center;
+}
+
+.row-img {
+    display: inline-block;
+    width: 13em;
+    height: 13em;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin: 0 .7em;
+}
+
+.spacial .row-img::before {
+    display: block;
+    background: #ffffff90;
+    width: 2em;
+    height: 2em;
+    line-height: 2em;
+    text-align: center;
+}
+
+.spacial .row-img:nth-of-type(1):before {content: 'A'}
+.spacial .row-img:nth-of-type(2):before {content: 'B'}
+.spacial .row-img:nth-of-type(3):before {content: 'C'}
+.spacial .row-img:nth-of-type(4):before {content: 'D'}
+
+.row-match {
+    display: inline-block;
+    width: 5em;
+    margin: 0 4.7em;
+    line-height: 3em;
+    border-radius: 5px;
+}
+
+#buttons {
+    text-align: center;
+    margin: 1em auto;
+    width: 80%;
+}
+
+#buttons button {
+    margin: 0 .5em;
+}
+
+#attr {
+    margin: 1em auto;
+    width: 80%;
+    text-align: right;
+}

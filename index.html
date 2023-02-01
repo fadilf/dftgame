@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Matching Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div id="header">
+        <h1>DFT Match Game</h1>
+        <p>Match the image above to its respective DFT magnitude plot.</p>
+    </div>
+    <div id="game">
+        <div id="gallery">
+            <div class="row spacial"></div>
+            <div class="row freq"></div>
+            <div class="row matching"></div>
+        </div>
+        <div id="buttons">
+            <button id="check" onclick="check()">Check my answers</button>
+            <button id="refresh" onclick="newGame()">New game</button>
+        </div>
+    </div>
+    <p id="attr">
+        <a href="https://github.com/fadilf/dftgame" target="_blank" rel="noopener noreferrer">Open source</a>. Made by Fadil Eledath.
+    </o>
+    <script src="script.js"></script>
+</body>
+</html>
