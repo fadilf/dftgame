@@ -13,7 +13,7 @@ function newGame() {
     spacialOrder = [];
     for (var i = 0; i < 4; i++) {
         var newImage = -1;
-        while ((newImage == -1) && !(newImage in spacialOrder)) {
+        while ((newImage == -1) || (spacialOrder.includes(newImage))) {
             newImage = Math.floor(Math.random() * (totalImages - 1));
         }
         spacialOrder.push(newImage);
