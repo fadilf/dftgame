@@ -5,7 +5,7 @@ function shuffleArray(array) {
     }
 }
 
-var totalImages = 61;
+var totalImages = 84;
 var rows = document.getElementsByClassName("row");
 var spacialOrder, freqOrder;
 
