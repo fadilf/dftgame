@@ -38,6 +38,7 @@ function newGame() {
         row3HTML += 
         `<div class="row-match">
             <select name="match-${i}">
+                <option disabled selected value>--</option>
                 <option value="${spacialOrder[0]}">A</option>
                 <option value="${spacialOrder[1]}">B</option>
                 <option value="${spacialOrder[2]}">C</option>
